@@ -7,7 +7,7 @@ class abc {
     }
     showMessage() {
         this.messages.forEach(message => {
-            console.log(message);
+            console.log("Message is :: ", message);
         });
     }
 }
