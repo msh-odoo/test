@@ -1,9 +1,14 @@
 class abc {
-    constructor(message) {
-        this.message = message;
+    constructor() {
+        this.messages = [];
+    }
+    addMessage(message) {
+        this.messages.push(message);
     }
     showMessage() {
-        console.log(this.message);
+        this.messages.forEach(message => {
+            console.log(message);
+        });
     }
 }
 
